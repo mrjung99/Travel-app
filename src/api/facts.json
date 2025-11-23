@@ -1,0 +1,44 @@
+[
+    {
+        "id":1,
+        "name":"Nepal",
+        "population":"29.19 million",
+        "capital":"Kathmandu",
+        "fact":"Home to Mount Everest, the highest peak on Earth."
+    },
+    {
+        "id":2,
+        "name":"India",
+        "population":"1.45 billion",
+        "capital":"New Delhi",
+        "fact":"The Kumbh Mela festival is so large it’s visible from space."
+    },
+    {
+        "id":3,
+        "name":"South Korea",
+        "population":"51.16 million",
+        "capital":"Seoul",
+        "fact":"Has one of the world’s highest internet speeds."
+    },
+    {
+        "id":4,
+        "name":"United States of America",
+        "population":"331 million",
+        "capital":"Washington, D.C",
+        "fact":"The U.S. has more tornadoes than any other country."
+    },
+    {
+        "id":5,
+        "name":"Portugal",
+        "population":"10.75 million",
+        "capital":"Lisbon",
+        "fact":"Lisbon is older than Rome and one of Europe’s oldest cities."
+    },
+    {
+        "id":6,
+        "name":"Egypt",
+        "population":"106 million",
+        "capital":"Cairo",
+        "fact":"The Great Pyramid of Giza is the only surviving Wonder of the Ancient World."
+    }
+]

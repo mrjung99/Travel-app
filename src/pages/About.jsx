@@ -1,9 +1,17 @@
-import React from "react";
+import AboutCard from "../component/ui/AboutCard";
+import countryData from "../api/facts.json";
 
 const About = () => {
+  // const [data] = useState([]);
+
+  const data = countryData;
+  console.log(data);
   return (
-    <div>
-      <h1>Hello from about page</h1>
+    <div className="flex flex-col gap-5 px-2.5 py-10">
+      <h1 className="text-2xl md:text-4xl font-semibold text-center">
+        Here are the interesting facts <br /> we're proud of
+      </h1>
+      <AboutCard data={data} />
     </div>
   );
 };
