@@ -1,0 +1,17 @@
+[
+    {
+        "icon":"FaLocationDot",
+        "title":"Find Us",
+        "details":"Tikapur, kailai"
+    },
+    {
+        "icon":"IoCall",
+        "title":"Call Us",
+        "details":"0123456789"
+    },
+    {
+        "icon":"MdMarkEmailUnread",
+        "title":"Email",
+        "details":"jungdaulat99@gmail.com"
+    }
+]

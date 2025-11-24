@@ -23,6 +23,7 @@ const Contact = () => {
             type="text"
             name="fullname"
             placeholder="Full name"
+            autoComplete="off"
             className="bg-gray-100 px-3 py-1.5 text-[14px] text-gray-800 rounded border 
             border-gray-600 outline-0"
           />
@@ -30,6 +31,7 @@ const Contact = () => {
             type="email"
             name="email"
             placeholder="Email"
+            autoComplete="off"
             className="bg-gray-100 px-3 py-1.5 text-[14px] text-gray-800 rounded border 
             border-gray-600 outline-0"
           />

@@ -2,10 +2,10 @@ import React from "react";
 
 const AboutCard = ({ data }) => {
   return (
-    <ul className="grid md:grid-cols-3 gap-8 w-9/12 mx-auto mt-6 ">
+    <ul className="grid md:grid-cols-3 gap-8 w-10/12 md:w-9/12 mx-auto mt-6 ">
       {data.map((currData) => {
         return (
-          <li className="bg-gray-200 p-3 rounded-xl hover:outline-1 hover:outline-gray-400">
+          <li className="bg-gray-200 p-3 rounded-xl outline-1 outline-gray-400 shadow-md">
             <p className="text-gray-800 text-xl md:text-2xl font-semibold">
               {currData.name}
             </p>
