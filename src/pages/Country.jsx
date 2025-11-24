@@ -44,7 +44,7 @@ const Country = () => {
   });
 
   return (
-    <section className="w-10/12 md:w-9/12 mx-auto mt-6">
+    <section className="w-10/12 md:w-9/12 min-h-[82vh] mx-auto my-6">
       <SearchCountry
         search={search}
         setSearch={setSearch}
