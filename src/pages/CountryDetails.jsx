@@ -85,6 +85,10 @@ const CountryDetails = () => {
               {countryDetail.timezones[0]}
             </p>
             <p>
+              <span className="text-gray-700">Top level domain: </span>
+              {countryDetail.tld[0]}
+            </p>
+            <p>
               <span className="text-gray-700">Start of Week: </span>
               {countryDetail.startOfWeek.charAt(0).toUpperCase() +
                 countryDetail.startOfWeek.slice(1)}

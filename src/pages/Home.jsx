@@ -22,7 +22,7 @@ const Home = () => {
           <NavLink to="/country">
             <button
               className="bg-gray-100 text-gray-900 rounded-full py-1.5 px-4 w-fit cursor-pointer
-          hover:bg-gray-800 hover:outline hover:text-gray-200 transition-colors outline 
+          hover:bg-gray-900 hover:outline hover:text-gray-200 transition-colors outline 
           outline-gray-600 mt-3 flex items-center gap-1"
             >
               Start Exploring

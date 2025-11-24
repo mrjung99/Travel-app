@@ -3,10 +3,13 @@ import { getCountryData } from "../api/CountryApi";
 import Loader from "../component/ui/Loader";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
+import SearchCountry from "../component/ui/SearchCountry";
 
 const Country = () => {
   const [isPending, startTransition] = useTransition();
   const [countries, setCountries] = useState([]);
+  const [search, setSearch] = useState();
+  const [filter, setFilter] = useState("all");
 
   useEffect(() => {
     startTransition(async () => {
@@ -23,10 +26,33 @@ const Country = () => {
     );
   }
 
+  //search and filter functionality
+  const searchCountry = (country) => {
+    if (search) {
+      return country.name.common.toLowerCase().includes(search.toLowerCase());
+    }
+    return country;
+  };
+
+  const filterCountry = (country) => {
+    if (filter === "all") return country;
+    return country.region === filter;
+  };
+
+  const searchFilterResult = countries.filter((country) => {
+    return searchCountry(country) && filterCountry(country);
+  });
+
   return (
     <section className="w-10/12 md:w-9/12 mx-auto mt-6">
+      <SearchCountry
+        search={search}
+        setSearch={setSearch}
+        filter={filter}
+        setFilter={setFilter}
+      />
       <ul className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 gap-7">
-        {countries.map((country, index) => {
+        {searchFilterResult.map((country, index) => {
           return (
             <li
               key={index}
