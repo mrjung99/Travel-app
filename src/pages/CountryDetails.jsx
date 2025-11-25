@@ -2,6 +2,7 @@ import React, { useEffect, useState, useTransition } from "react";
 import { NavLink, useParams } from "react-router-dom";
 import { getCountryDetails } from "../api/CountryApi";
 import Loader from "../component/ui/Loader";
+import { MdOutlineKeyboardBackspace } from "react-icons/md";
 
 const CountryDetails = () => {
   const param = useParams();
@@ -27,7 +28,10 @@ const CountryDetails = () => {
 
   return (
     countryDetail && (
-      <section className="flex flex-col items-center justify-center text-gray-900 bg-gray-200 my-7 shadow-md">
+      <section
+        className="flex flex-col items-center justify-center text-gray-900 bg-gray-200 
+        my-7 shadow-md min-h-[77vh]"
+      >
         <div className="py-5 flex flex-col md:flex-row justify-around md:items-center md:gap-20">
           <div className="">
             <img src={countryDetail.flags.png} alt="" />
@@ -97,10 +101,11 @@ const CountryDetails = () => {
         </div>
         <NavLink to="/country">
           <button
-            className="bg-red-700 hover:bg-red-600 text-gray-200 px-5 py-1 rounded-md 
-              cursor-pointer mt-6 transition-colors my-5 md:my-10"
+            className="bg-gray-100 hover:bg-gray-800 text-gray-800 hover:text-gray-100 px-5 py-1 rounded-md 
+              cursor-pointer outline outline-gray-400 mt-6 transition-colors my-5 md:my-10 flex items-center gap-2"
           >
-            Go Back
+            <MdOutlineKeyboardBackspace />
+            <span>Go Back</span>
           </button>
         </NavLink>
       </section>

@@ -8,7 +8,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="py-3 px-4 md:px-0 md:w-9/12 mx-auto md:mb-15">
+    <div className="py-3 px-4 md:px-0 md:w-9/12 mx-auto md:mb-15 min-h-[83vh]">
       <div>
         <h1 className="text-4xl md:text-5xl md:mt-4 text-gray-800 font-semibold">
           Contact
@@ -45,7 +45,7 @@ const Contact = () => {
           ></textarea>
           <button
             type="submit"
-            className="bg-gray-800 text-gray-100  py-2 rounded cursor-pointer hover:bg-gray-700  
+            className="bg-gray-800 text-gray-100  py-2 rounded cursor-pointer hover:bg-gray-100 hover:text-gray-800 outline outline-gray-400 
             transition-colors"
           >
             Submit

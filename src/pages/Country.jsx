@@ -34,11 +34,13 @@ const Country = () => {
     return country;
   };
 
+  //filter country
   const filterCountry = (country) => {
     if (filter === "all") return country;
     return country.region === filter;
   };
 
+  //search country
   const searchFilterResult = countries.filter((country) => {
     return searchCountry(country) && filterCountry(country);
   });
@@ -50,6 +52,8 @@ const Country = () => {
         setSearch={setSearch}
         filter={filter}
         setFilter={setFilter}
+        countries={countries}
+        setCountries={setCountries}
       />
       <ul className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 gap-7">
         {searchFilterResult.map((country, index) => {

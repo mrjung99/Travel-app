@@ -17,11 +17,13 @@ const Footer = () => {
 
   return (
     <section className="bg-gray-900 text-gray-400">
-      <div className="flex flex-wrap gap-3 items-center justify-around py-3 bg-gray-800">
+      <div className="flex flex-wrap items-center justify-around py-3 bg-gray-800">
         {footerData.map((data, index) => {
           return (
-            <div key={index} className="flex items-center gap-0.5">
-              <p className="text-3xl text-blue-400">{footerIcons[data.icon]}</p>
+            <div key={index} className="flex items-center gap-1">
+              <p className="text-2xl md:text-3xl text-blue-400">
+                {footerIcons[data.icon]}
+              </p>
               <div>
                 <p className="font-semibold text-[14px]">{data.title}</p>
                 <p className="text-[12px]">{data.details}</p>

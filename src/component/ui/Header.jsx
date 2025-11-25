@@ -13,7 +13,7 @@ const Header = () => {
   return (
     <header className="flex items-center h-[60px] w-full shadow-md px-5 md:px-0">
       <div className="flex w-full md:w-9/12 md:mx-auto justify-between">
-        <h1 className="text-2xl text-orange-700 font-semibold">Travel App</h1>
+        <h1 className="text-2xl text-orange-700 font-bold">CountryLens</h1>
 
         <nav className="hidden md:flex gap-6 md:gap-7">
           {["/", "about", "country", "contact"].map((path, index) => {
