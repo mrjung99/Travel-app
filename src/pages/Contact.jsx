@@ -1,4 +1,5 @@
 import React from "react";
+import { LuSend } from "react-icons/lu";
 
 const Contact = () => {
   const handleFormSubmit = (formData) => {
@@ -44,7 +45,7 @@ const Contact = () => {
           ></textarea>
           <button
             type="submit"
-            className="bg-blue-700 text-white py-2 rounded cursor-pointer hover:bg-blue-600 
+            className="bg-gray-800 text-gray-100  py-2 rounded cursor-pointer hover:bg-gray-700  
             transition-colors"
           >
             Submit
