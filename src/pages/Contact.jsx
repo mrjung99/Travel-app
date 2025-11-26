@@ -45,7 +45,7 @@ const Contact = () => {
           ></textarea>
           <button
             type="submit"
-            className="bg-gray-800 text-gray-100  py-2 rounded cursor-pointer hover:bg-gray-100 hover:text-gray-800 outline outline-gray-400 
+            className="bg-gray-900 text-gray-100  py-2 rounded cursor-pointer hover:bg-gray-950 
             transition-colors"
           >
             Submit
