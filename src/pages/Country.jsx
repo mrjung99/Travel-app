@@ -8,6 +8,7 @@ import SearchCountry from "../component/ui/SearchCountry";
 const Country = () => {
   const [isPending, startTransition] = useTransition();
   const [countries, setCountries] = useState([]);
+  const [originalCopyCountries, setOriginalCopyCountries] = useState([]);
   const [search, setSearch] = useState();
   const [filter, setFilter] = useState("all");
 
@@ -15,6 +16,7 @@ const Country = () => {
     startTransition(async () => {
       const res = await getCountryData();
       setCountries(res.data);
+      setOriginalCopyCountries(res.data); //this will be used when the sort method is used
     });
   }, []);
 
@@ -54,6 +56,7 @@ const Country = () => {
         setFilter={setFilter}
         countries={countries}
         setCountries={setCountries}
+        originalCopyCountries={originalCopyCountries}
       />
       <ul className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 gap-7">
         {searchFilterResult.map((country, index) => {

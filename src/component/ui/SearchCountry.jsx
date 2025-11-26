@@ -9,6 +9,7 @@ const SearchCountry = ({
   setFilter,
   countries,
   setCountries,
+  originalCopyCountries,
 }) => {
   const [sort, setSort] = useState("none");
 
@@ -21,12 +22,12 @@ const SearchCountry = ({
   };
 
   const sortCountry = (value) => {
-    const sorted = [...countries].sort((a, b) => {
+    const sorted = JSON.parse(JSON.stringify(countries)).sort((a, b) => {
       return value === "asc"
         ? a.name.common.localeCompare(b.name.common)
         : b.name.common.localeCompare(a.name.common);
     });
-    if (value === "none") return countries;
+    if (value === "none") return setCountries(originalCopyCountries);
 
     setCountries(sorted);
   };
