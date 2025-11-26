@@ -28,7 +28,7 @@ const Country = () => {
     );
   }
 
-  //search and filter functionality
+  //---------------search and filter functionality----------------------
   const searchCountry = (country) => {
     if (search) {
       return country.name.common.toLowerCase().includes(search.toLowerCase());
